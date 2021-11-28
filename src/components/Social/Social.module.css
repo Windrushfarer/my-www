@@ -1,0 +1,8 @@
+.social {
+  display: flex;
+  align-items: center;
+}
+
+.link + .link {
+  margin-left: 5px;
+}

@@ -1,8 +1,20 @@
-import '../styles/globals.css'
-import type { AppProps } from 'next/app'
+import Head from 'next/head'
 
-function MyApp({ Component, pageProps }: AppProps) {
-  return <Component {...pageProps} />
+import '@styles/colors.css'
+import '@styles/globals.css'
+
+import { Page } from '@components/Page'
+import { Header } from '@components/Header'
+
+export default function MyApp({ Component, pageProps }) {
+  return (
+    <Page>
+      <Head>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+      </Head>
+
+      <Header />
+      <Component {...pageProps} />
+    </Page>
+  )
 }
-
-export default MyApp

@@ -1,0 +1,24 @@
+.header {
+  display: flex;
+  padding: 18px 0;
+}
+
+.right {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+}
+
+.right a {
+  text-decoration-thickness: 0.015em;
+  transition: color 0.2s;
+}
+
+.right a:hover {
+  color: #338af9;
+  text-decoration: underline;
+}
+
+.social {
+  margin-left: 5px;
+}

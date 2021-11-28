@@ -1,0 +1,36 @@
+.wrapper {
+  height: 50px;
+  display: flex;
+  align-items: center;
+}
+
+.first, .third {
+  font-size: 24px;
+  font-weight: bold;
+  color: var(--logo-accent);
+}
+
+.first, .second, .third {
+  display: inline-block;
+}
+
+.first {
+  transform: rotate(-35deg) translateX(1px) translateY(2px);
+  transform-origin: center center;
+  margin-right: -20px;
+}
+
+.second {
+  font-size: 26px;
+  font-weight: bold;
+  width: 35px;
+  text-align: center;
+  color: var(--logo-secondary);
+  transform: translateY(13px) translateX(6px);
+}
+
+.third {
+  transform: rotate(35deg) translateX(3px) translateY(2px);
+  transform-origin: center center;
+  margin-left: -12px;
+}

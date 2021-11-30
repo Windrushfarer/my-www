@@ -6,7 +6,12 @@ import '@styles/globals.css'
 import { Page } from '@components/Page'
 import { Header } from '@components/Header'
 
-export default function MyApp({ Component, pageProps }) {
+type Props = {
+  Component: React.ComponentType<any>,
+  pageProps: any
+}
+
+export default function MyApp({ Component, pageProps }: Props) {
   return (
     <Page>
       <Head>

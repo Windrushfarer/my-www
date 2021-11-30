@@ -1,31 +1,40 @@
 import { GetStaticProps } from 'next'
 import Head from "next/head"
-import { fetchPostLinks } from '@api/fetchPostLinks'
+import { fetchRecentPosts } from '@api/fetchRecentPosts'
+import { PostMeta } from '@shared/types/post';
+import { Section } from '@components/Section';
+import { Hero } from '@components/Hero';
 
 type Props = {
-  links: any[];
+  posts: PostMeta[];
 };
 
 export const getStaticProps: GetStaticProps<Props> = async () => {
   return {
     props: {
-      links: await fetchPostLinks(),
+      posts: await fetchRecentPosts(),
     },
   };
 }
 
-const Main = ({ links }: Props) => (
+const Main = ({ posts }: Props) => (
   <>
     <Head>
       <title>Любите котов, а не баги</title>
       <meta name="description" content="Коты и баги" />
     </Head>
 
-    <ul>
-      {/* {links.map(item => (
+    <Hero />
+
+    <Section title="За последнее время">
+      Посты
+    </Section>
+
+    {/* <ul> */}
+    {/* {links.map(item => (
         <li key={item.slug} >{item.title}</li>
       ))} */}
-    </ul>
+    {/* </ul> */}
   </>
 );
 

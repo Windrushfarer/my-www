@@ -4,8 +4,9 @@ import parser from 'gray-matter'
 
 import { POSTS_DIR } from './const'
 import { mdxOnly } from './utils/mdxOnly'
+import { PostMeta } from '@shared/types/post'
 
-export async function fetchPostLinks() {
+export async function fetchRecentPosts(): Promise<PostMeta[]> {
   const posts = fs
     .readdirSync(POSTS_DIR)
     .filter(mdxOnly)
@@ -15,12 +16,13 @@ export async function fetchPostLinks() {
       return fs.readFileSync(filePath, "utf-8")
     })
 
-  const metas = [];
+  const metas: PostMeta[] = [];
 
   posts.forEach(post => {
-    const meta = parser(post).data
-    metas.push(meta);
+    const meta = parser(post).data as PostMeta
+
+    metas.push(meta)
   })
 
-  return metas;
+  return metas
 }

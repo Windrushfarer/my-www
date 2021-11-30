@@ -1,6 +1,10 @@
 .header {
+  position: sticky;
+  top: 0;
   display: flex;
   padding: 18px 0;
+  z-index: 2;
+  color: var(--header-color);
 }
 
 .right {
@@ -15,7 +19,7 @@
 }
 
 .right a:hover {
-  color: #338af9;
+  color: var(--link-hover);
   text-decoration: underline;
 }
 

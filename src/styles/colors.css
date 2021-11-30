@@ -2,8 +2,15 @@
   --logo-accent: #4433ff;
   --logo-secondary: #f3bc1c;
 
-  --main-color: #0a0c10;
-  --link-hover: #338af9;
+  --main-color: #25272a;
+  --header-color: #f3f3f3;
 
-  --background-main: #fafafa;
+  --link-hover: #338af9;
+  --color-accent: #218af9;
+
+  --background-main: #f7f7f7;
+  --background-hero: #0e141b;
+
+  --color-homepage-light: hsla(200deg, 100%, 85%, 0);
+  --color-homepage-dark: hsla(200deg, 100%, 85%, 0.1);
 }

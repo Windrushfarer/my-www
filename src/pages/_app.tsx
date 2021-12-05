@@ -1,6 +1,7 @@
 import Head from 'next/head'
 
 import '@styles/colors.css'
+import '@styles/sizes.css'
 import '@styles/globals.css'
 
 import { Page } from '@components/Page'

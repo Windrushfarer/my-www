@@ -27,9 +27,9 @@ export const PostLink: FC<Props> = ({ title, slug, description, date }) => {
           {title}
         </h3>
 
-        <span className={styles.date}>
+        <time dateTime={date} className={styles.date}>
           {formatDateTime(date)}
-        </span>
+        </time>
 
         <p className={styles.decription}>
           {description}

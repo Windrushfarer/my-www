@@ -1,6 +1,6 @@
 import { GetStaticProps } from 'next'
 import Head from "next/head"
-import { fetchRecentPosts } from '@api/fetchRecentPosts'
+import { fetchPostsMeta } from '@api/fetchPostsMeta'
 import { PostMeta } from '@shared/types/post';
 import { Recent } from '@components/Recent';
 import { Bio } from '@components/Bio';
@@ -12,7 +12,7 @@ type Props = {
 export const getStaticProps: GetStaticProps<Props> = async () => {
   return {
     props: {
-      posts: await fetchRecentPosts(),
+      posts: await fetchPostsMeta(),
     },
   };
 }

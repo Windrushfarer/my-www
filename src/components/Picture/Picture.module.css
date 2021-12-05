@@ -1,0 +1,19 @@
+.wrapper {
+  max-width: var(--max-width);
+  margin: 24px 0;
+}
+
+.picture {
+  display: block;
+}
+
+.image {
+  max-width: 100%;
+}
+
+.caption {
+  padding-top: 8px;
+  font-style: italic;
+  text-align: center;
+  color: var(--text-secondary-color);
+}

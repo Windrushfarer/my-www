@@ -3,13 +3,13 @@ import fs from 'fs'
 import parser from 'gray-matter'
 
 import { POSTS_DIR } from './const'
-import { mdxOnly } from './utils/mdxOnly'
+import { onlyMdx } from './utils/mdx'
 import { PostMeta } from '@shared/types/post'
 
-export async function fetchRecentPosts(): Promise<PostMeta[]> {
+export async function fetchPostsMeta(): Promise<PostMeta[]> {
   const posts = fs
     .readdirSync(POSTS_DIR)
-    .filter(mdxOnly)
+    .filter(onlyMdx)
     .map(filename => {
       const filePath = path.join(POSTS_DIR, filename)
 

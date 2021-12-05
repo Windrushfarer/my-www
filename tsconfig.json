@@ -28,6 +28,9 @@
       "@shared/*": [
         "src/shared/*"
       ],
+      "@content/*": [
+        "src/content/*"
+      ],
       "@styles/*": [
         "src/styles/*"
       ]

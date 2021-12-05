@@ -10,12 +10,16 @@
     "template:component": "npx hygen component new"
   },
   "dependencies": {
+    "@mavrin/remark-typograf": "^2.2.0",
     "gray-matter": "^4.0.3",
     "hygen": "^6.1.0",
     "next": "12.0.2",
     "next-mdx-remote": "^3.0.8",
     "react": "17.0.2",
-    "react-dom": "17.0.2"
+    "react-dom": "17.0.2",
+    "rehype-autolink-headings": "^6.1.0",
+    "rehype-slug": "^5.0.0",
+    "remark-unwrap-images": "^3.0.1"
   },
   "devDependencies": {
     "@types/node": "16.11.6",

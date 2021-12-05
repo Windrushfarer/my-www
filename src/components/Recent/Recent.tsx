@@ -11,14 +11,14 @@ type Props = {
 
 export const Recent: FC<Props> = ({ posts }) => {
   return (
-    <Section title="За последнее время" className={styles.recent}>
-      {posts.map(({ title, path, description, datetime }) => (
+    <Section title="[За последнее время]" className={styles.recent}>
+      {posts.map(({ title, path, description, date }) => (
         <PostLink
           key={path}
           title={title}
           slug={path}
           description={description}
-          date={datetime}
+          date={date}
         />
       ))}
     </Section>

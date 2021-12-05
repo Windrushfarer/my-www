@@ -2,9 +2,8 @@ import { GetStaticProps } from 'next'
 import Head from "next/head"
 import { fetchRecentPosts } from '@api/fetchRecentPosts'
 import { PostMeta } from '@shared/types/post';
-import { Section } from '@components/Section';
-import { Hero } from '@components/Hero';
 import { Recent } from '@components/Recent';
+import { Bio } from '@components/Bio';
 
 type Props = {
   posts: PostMeta[];
@@ -26,7 +25,7 @@ const Main = ({ posts }: Props) => {
         <meta name="description" content="Коты и баги" />
       </Head>
 
-      <Hero />
+      <Bio />
 
       <Recent posts={posts} />
     </>

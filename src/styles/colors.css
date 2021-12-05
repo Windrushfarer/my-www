@@ -2,14 +2,12 @@
   --logo-accent: #4433ff;
   --logo-secondary: #f3bc1c;
 
-  --main-color: #21232c;
-  --text-color: #0a0c10;
-  --header-color: #f3f3f3;
+  --text-color: #282828;
 
   --link-hover: #338af9;
   --color-accent: #218af9;
 
-  --background-main: #f7f7f7;
+  --background-main: #fbf3d0;
   --background-hero: #0e141b;
 
   --color-homepage-light: hsla(200deg, 100%, 85%, 0);

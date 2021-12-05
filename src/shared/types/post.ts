@@ -1,7 +1,7 @@
 export interface PostMeta {
   title: string;
   description: string;
-  datetime: string;
+  date: string;
   path: string;
   tags?: string[];
 }

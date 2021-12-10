@@ -1,12 +1,17 @@
 :root {
-  --logo-accent: #4433ff;
-  --logo-secondary: #f3bc1c;
+  --logo-accent: #43f;
+  --logo-secondary: #fe9158;
 
-  --text-color: #282828;
-  --text-secondary-color: #787878;
+  --text-color: #46494c;
+  --text-secondary-color: #4c5c68;
 
-  --link-hover: #338af9;
-  --color-accent: #218af9;
+  --link-hover: #40ada3;
+  --color-accent: #009fb7;
 
-  --background-main: #fffae4;
+  --background-main: #f4f4f8;
+
+  --warning-color: #fed766;
+  --error-color: #fe4a49;
+  /* ------------------------------------- */
+  --color-code-background: #e6e6ea;
 }

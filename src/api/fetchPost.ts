@@ -9,5 +9,5 @@ export async function fetchPost(id: string): Promise<string> {
   const filename = mdxExtension(id)
   const rawContent = fs.readFileSync(path.join(POSTS_DIR, filename), "utf-8")
 
-  return parseContent(rawContent)
+  return await parseContent(rawContent)
 }

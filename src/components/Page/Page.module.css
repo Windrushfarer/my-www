@@ -1,5 +1,8 @@
 .main {
+  --horizontal-padding: 2rem;
+
   min-height: 100vh;
-  max-width: 840px;
+  max-width: calc(var(--max-width) + var(--horizontal-padding) * 2);
+  padding: 0 var(--horizontal-padding);
   margin: 0 auto
 }

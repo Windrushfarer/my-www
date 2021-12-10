@@ -1,1 +1,9 @@
-.post {}
+.post {
+  padding: 40px 0 60px;
+}
+
+.post h1,
+.post h2 {
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}

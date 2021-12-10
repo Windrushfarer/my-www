@@ -1,0 +1,6 @@
+.code {
+  padding: 0.2em 0.5em;
+  font-family: var(--font-family-mono);
+  background: rgba(110, 164, 245, 0.15);
+  border-radius: 3px;
+}

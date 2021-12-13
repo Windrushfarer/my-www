@@ -20,3 +20,25 @@ a {
 * {
   box-sizing: border-box;
 }
+
+.title-anchor {
+  position: relative;
+}
+
+.title-anchor::before {
+  display: block;
+  position: absolute;
+  left: -24px;
+  top: 50%;
+  transform: translateY(-50%);
+
+  content: "#";
+  visibility: hidden;
+
+  color: var(--color-accent-secondary);
+}
+
+.title-anchor:hover::before {
+  visibility: visible;
+}
+

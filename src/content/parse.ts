@@ -7,6 +7,6 @@ type ParsedContent = string
 export async function parseContent(source: string): Promise<ParsedContent> {
   const { content } = parser(source)
   const { compiledSource } = await serialize(content, serializerOptions)
-  console.log('compiledSource:', compiledSource)
+
   return compiledSource
 }

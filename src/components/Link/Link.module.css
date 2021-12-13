@@ -1,0 +1,10 @@
+.link {
+  color: var(--color-accent);
+}
+
+.link:hover {
+  background: var(--color-accent);
+  color: #fff;
+  text-decoration: underline;
+  transition: color 0.2s;
+}

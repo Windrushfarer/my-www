@@ -1,0 +1,29 @@
+.quote {
+  display: block;
+  position: relative;
+  margin: 0;
+  padding: 1em 2em;
+  font-style: italic;
+}
+
+.quote::before,
+.quote::after {
+  position: absolute;
+  top: 0;
+  color: var(--color-accent-secondary);
+  font-size: 3em;
+}
+
+.quote::before {
+  left: -10px;
+  content: "«";
+}
+
+.quote::after {
+  right: -10px;
+  content: "»";
+}
+
+.quote p {
+  margin: 0;
+}

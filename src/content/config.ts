@@ -27,7 +27,7 @@ export const serializerOptions = {
           behavior: 'wrap',
           content: [],
           properties: {
-            className: 'anchor',
+            className: 'title-anchor',
           },
         },
       ],

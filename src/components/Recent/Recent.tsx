@@ -11,7 +11,7 @@ type Props = {
 
 export const Recent: FC<Props> = ({ posts }) => {
   return (
-    <Section title="[За последнее время]" className={styles.recent}>
+    <Section title="[Посты за последнее время]" className={styles.recent}>
       {posts.map(({ title, path, description, date }) => (
         <PostLink
           key={path}

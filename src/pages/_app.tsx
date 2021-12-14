@@ -8,6 +8,8 @@ import '@styles/hljs.css'
 
 import { Page } from '@components/Page'
 import { Header } from '@components/Header'
+import { Main } from '@components/Main'
+import { Footer } from '@components/Footer'
 
 type Props = {
   Component: React.ComponentType<any>,
@@ -33,9 +35,13 @@ export default function MyApp({ Component, pageProps }: Props) {
           crossOrigin=""
         />
       </Head>
-
       <Header />
-      <Component {...pageProps} />
+
+      <Main>
+        <Component {...pageProps} />
+      </Main>
+
+      <Footer />
     </Page>
   )
 }

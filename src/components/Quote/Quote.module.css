@@ -3,7 +3,6 @@
   position: relative;
   margin: 0;
   padding: 1em 2em;
-  font-style: italic;
 }
 
 .quote::before,
@@ -26,4 +25,5 @@
 
 .quote p {
   margin: 0;
+  font-style: italic;
 }

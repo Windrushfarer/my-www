@@ -1,9 +1,18 @@
 .header {
+  position: sticky;
+  z-index: 2;
+  top: 0;
   width: 100%;
-  display: flex;
-  padding: 24px 0;
+  padding: 1rem 0;
   z-index: 2;
   color: var(--header-color);
+  background: var(--background-main);
+}
+
+.content {
+  display: flex;
+  max-width: var(--max-width);
+  margin: 0 auto;
 }
 
 .right {

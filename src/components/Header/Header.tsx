@@ -6,10 +6,12 @@ import styles from './Header.module.css'
 export const Header = () => {
   return (
     <header className={styles.header}>
-      <Logo />
-      <div className={styles.right}>
-        <div className={styles.social}>
-          <Social />
+      <div className={styles.content}>
+        <Logo />
+        <div className={styles.right}>
+          <div className={styles.social}>
+            <Social />
+          </div>
         </div>
       </div>
     </header>

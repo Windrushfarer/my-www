@@ -1,9 +1,30 @@
-import styles from './Main.module.css'
+import { FC } from 'react'
 
-export const Main: React.FC = ({ children }) => {
+import { PostMeta } from '@shared/types/post';
+import { Recent } from '@components/Recent';
+import { Content } from '@components/Content';
+import { Hero } from '@components/Hero';
+import { StickyWrapper } from '@components/Header';
+import { Bio } from '@components/Bio';
+
+type Props = {
+  posts: PostMeta[];
+};
+
+export const Main: FC<Props> = ({ posts }) => {
   return (
-    <div className={styles.main}>
-      {children}
-    </div>
+    <>
+      <Hero>
+        <Content>
+          <Bio />
+        </Content>
+      </Hero>
+
+      <StickyWrapper />
+
+      <Content>
+        <Recent posts={posts} />
+      </Content>
+    </>
   )
 }

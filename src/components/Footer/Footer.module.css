@@ -11,9 +11,9 @@
   color: var(--color-mute);
 }
 
-.copyright {
+.icon {
   font-size: var(--font-size);
-  margin-right: 8px;
+  margin: 0 6px;
 }
 
 .block {

@@ -1,9 +1,14 @@
 .post {
-  padding: 40px 0 60px;
+  padding: 0 0 60px;
 }
 
 .post h1,
 .post h2 {
   margin-top: 2rem;
   margin-bottom: 1rem;
+}
+
+.post h1:first-child,
+.post h2:first-child {
+  margin-top: 0;
 }

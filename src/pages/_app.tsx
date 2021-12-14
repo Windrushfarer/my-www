@@ -7,9 +7,10 @@ import '@styles/globals.css'
 import '@styles/hljs.css'
 
 import { Page } from '@components/Page'
-import { Header } from '@components/Header'
-import { Main } from '@components/Main'
+import { Header, StickyWrapper } from '@components/Header'
+import { Content } from '@components/Content'
 import { Footer } from '@components/Footer'
+import { Hero } from '@components/Hero'
 
 type Props = {
   Component: React.ComponentType<any>,
@@ -37,9 +38,7 @@ export default function MyApp({ Component, pageProps }: Props) {
       </Head>
       <Header />
 
-      <Main>
-        <Component {...pageProps} />
-      </Main>
+      <Component {...pageProps} />
 
       <Footer />
     </Page>

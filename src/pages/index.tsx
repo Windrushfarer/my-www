@@ -4,6 +4,7 @@ import { fetchPostsMeta } from '@api/fetchPostsMeta'
 import { PostMeta } from '@shared/types/post';
 import { Recent } from '@components/Recent';
 import { Bio } from '@components/Bio';
+import { Main } from '@components/Main';
 
 type Props = {
   posts: PostMeta[];
@@ -17,7 +18,7 @@ export const getStaticProps: GetStaticProps<Props> = async () => {
   };
 }
 
-const Main = ({ posts }: Props) => {
+const Index = ({ posts }: Props) => {
   return (
     <>
       <Head>
@@ -25,11 +26,9 @@ const Main = ({ posts }: Props) => {
         <meta name="description" content="Коты и баги" />
       </Head>
 
-      <Bio />
-
-      <Recent posts={posts} />
+      <Main posts={posts} />
     </>
   )
 }
 
-export default Main
+export default Index

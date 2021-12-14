@@ -5,6 +5,10 @@ import { PostMeta } from '@shared/types/post';
 import { fetchPost } from '@api/fetchPost';
 import { Post } from '@components/Post';
 import { getListing } from '@api/getListing';
+import { Hero } from '@components/Hero';
+import { StickyWrapper } from '@components/Header';
+import { Content } from '@components/Content';
+import { PostTitle } from '@components/PostTitle';
 
 type Props = {
   meta: PostMeta
@@ -39,7 +43,16 @@ const PostPage = ({ content, meta }: Props) => {
         <meta name="description" content="Коты и баги" />
       </Head>
 
-      <Post content={content} />
+      <Hero>
+        <Content>
+          <PostTitle>{meta.title}</PostTitle>
+        </Content>
+      </Hero>
+      <StickyWrapper />
+
+      <Content>
+        <Post content={content} />
+      </Content>
     </>
   )
 }

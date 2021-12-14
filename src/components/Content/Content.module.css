@@ -1,4 +1,4 @@
-.main {
+.content {
   --horizontal-padding: 2rem;
 
   max-width: calc(var(--max-width) + var(--horizontal-padding) * 2);

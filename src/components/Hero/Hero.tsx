@@ -1,8 +1,14 @@
 import { FC } from 'react'
+import { WithClassName } from '@shared/types/common'
+
 import styles from './Hero.module.css'
 
-export const Hero: FC = ({ children }) => {
+type Props = WithClassName
+
+export const Hero: FC<Props> = ({ children, className }) => {
+  const finalClass = `${styles.hero} ${className || ''}`.trim();
+
   return (
-    <div className={styles.hero}>{children}</div>
+    <div className={finalClass}>{children}</div>
   )
 }

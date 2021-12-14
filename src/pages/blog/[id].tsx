@@ -43,14 +43,10 @@ const PostPage = ({ content, meta }: Props) => {
         <meta name="description" content="Коты и баги" />
       </Head>
 
-      <Hero>
-        <Content>
-          <PostTitle>{meta.title}</PostTitle>
-        </Content>
-      </Hero>
       <StickyWrapper />
 
       <Content>
+        <PostTitle>{meta.title}</PostTitle>
         <Post content={content} />
       </Content>
     </>

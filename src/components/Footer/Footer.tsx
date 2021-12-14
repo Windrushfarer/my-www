@@ -8,7 +8,7 @@ export const Footer: FC = () => {
         <span className={styles.icon}>©</span> {new Date().getFullYear()}-present, Egor Ogarkov
       </div>
       <div className={styles.block}>
-        Made with <span className={styles.icon}>♥ </span>by Windrushfarer
+        Made with <span className={styles.icon}>♥</span>by Windrushfarer
       </div>
     </footer>
   )

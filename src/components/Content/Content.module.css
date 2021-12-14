@@ -2,6 +2,7 @@
   --horizontal-padding: 2rem;
 
   max-width: calc(var(--max-width) + var(--horizontal-padding) * 2);
+  width: 100%;
   padding: 0 var(--horizontal-padding);
   margin: 0 auto
 }

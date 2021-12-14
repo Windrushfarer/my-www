@@ -14,15 +14,12 @@ type Props = {
 export const Main: FC<Props> = ({ posts }) => {
   return (
     <>
-      <Hero>
-        <Content>
-          <Bio />
-        </Content>
-      </Hero>
+      <Hero />
 
       <StickyWrapper />
 
       <Content>
+        <Bio />
         <Recent posts={posts} />
       </Content>
     </>

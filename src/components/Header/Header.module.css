@@ -1,7 +1,7 @@
 .wrapper,
 .header {
   /* Permanently static to fix overlay issues */
-  /* position: sticky; */
+  position: sticky;
   top: 0;
   width: 100%;
   height: var(--header-height);
@@ -20,7 +20,7 @@
 
 .content {
   display: flex;
-  max-width: var(--max-width);
+  width: 100%;
   margin: 0 auto;
 }
 

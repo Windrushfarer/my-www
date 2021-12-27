@@ -41,7 +41,7 @@ const PostPage = ({ content, meta }: Props) => {
     <>
       <Head>
         <title>Любите котов, а не баги</title>
-        <meta name="description" content="Коты и баги" />
+        <meta name="description" content={meta.description} />
 
         <SocialMeta
           title={meta.title}

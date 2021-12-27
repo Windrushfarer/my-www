@@ -22,7 +22,7 @@ const Index = ({ posts }: Props) => {
     <>
       <Head>
         <title>Любите котов, а не баги</title>
-        <meta name="description" content="Коты и баги" />
+        <meta name="description" content="Разработка, баги, коты и игры" />
 
         <SocialMeta
           title="Коты и баги"

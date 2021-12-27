@@ -1,14 +1,15 @@
 import { GetStaticPaths, GetStaticProps } from 'next'
 import Head from "next/head"
 import { fetchPostsMeta } from '@api/fetchPostsMeta'
-import { PostMeta } from '@shared/types/post';
-import { fetchPost } from '@api/fetchPost';
-import { Post } from '@components/Post';
-import { getListing } from '@api/getListing';
-import { Hero } from '@components/Hero';
-import { StickyWrapper } from '@components/Header';
-import { Content } from '@components/Content';
-import { PostTitle } from '@components/PostTitle';
+import { PostMeta } from '@shared/types/post'
+import { fetchPost } from '@api/fetchPost'
+
+import { Post } from '@components/Post'
+import { getListing } from '@api/getListing'
+import { StickyWrapper } from '@components/Header'
+import { Content } from '@components/Content'
+import { PostTitle } from '@components/PostTitle'
+import { SocialMeta } from '@components/SocialMeta'
 
 type Props = {
   meta: PostMeta
@@ -41,6 +42,11 @@ const PostPage = ({ content, meta }: Props) => {
       <Head>
         <title>Любите котов, а не баги</title>
         <meta name="description" content="Коты и баги" />
+
+        <SocialMeta
+          title={meta.title}
+          description={meta.description}
+        />
       </Head>
 
       <StickyWrapper />

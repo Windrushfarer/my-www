@@ -1,10 +1,9 @@
 import { GetStaticProps } from 'next'
 import Head from "next/head"
 import { fetchPostsMeta } from '@api/fetchPostsMeta'
-import { PostMeta } from '@shared/types/post';
-import { Recent } from '@components/Recent';
-import { Bio } from '@components/Bio';
-import { Main } from '@components/Main';
+import { PostMeta } from '@shared/types/post'
+import { Main } from '@components/Main'
+import { SocialMeta } from '@components/SocialMeta'
 
 type Props = {
   posts: PostMeta[];
@@ -24,6 +23,11 @@ const Index = ({ posts }: Props) => {
       <Head>
         <title>Любите котов, а не баги</title>
         <meta name="description" content="Коты и баги" />
+
+        <SocialMeta
+          title="Коты и баги"
+          description="Разработка, баги, коты и игры"
+        />
       </Head>
 
       <Main posts={posts} />

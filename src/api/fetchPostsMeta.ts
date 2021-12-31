@@ -24,5 +24,7 @@ export async function fetchPostsMeta(): Promise<PostMeta[]> {
     metas.push(meta)
   })
 
+  metas.sort((a, b) => new Date(b.date) - new Date(a.date))
+
   return metas
 }

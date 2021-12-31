@@ -1,4 +1,4 @@
-const exentions = ['webp', 'avif', 'png', 'jpg'] as const;
+const exentions = ['webp', 'avif', 'png', 'jpg', 'jpeg'] as const;
 
 type Extension = typeof exentions[number]
 

@@ -11,8 +11,8 @@ export const Picture = ({ src, alt, caption }: Props) => {
   return (
     <figure className={styles.wrapper}>
       <picture className={styles.picture}>
-        {/* <source srcSet={setExtension(src, 'avif')} type="image/avif" /> */}
-        {/* <source srcSet={setExtension(src, 'webp')} type="image/webp" /> */}
+        <source srcSet={setExtension(src, 'avif')} type="image/avif" />
+        <source srcSet={setExtension(src, 'webp')} type="image/webp" />
         {/* eslint-disable-next-line @next/next/no-img-element */}
         <img
           className={styles.image}

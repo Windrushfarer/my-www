@@ -19,6 +19,7 @@ const substituteComponents = {
   inlineCode: CodeInline,
   pre: CodeBlock,
   blockquote: Quote,
+  Picture
 }
 
 export const Post: FC<Props> = ({ content, }) => {

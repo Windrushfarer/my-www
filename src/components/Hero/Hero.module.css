@@ -3,5 +3,5 @@
   height: 220px;
   margin-top: calc(var(--header-height) * -1);
 
-  background: linear-gradient(0deg, var(--hero-gradient-start) 43%, var(--hero-gradient-end) 100%);
+  background: var(--hero-bg);
 }

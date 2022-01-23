@@ -12,7 +12,24 @@
 
   --background-main: #f4f4f8;
   --background-code: #e6e6ea;
+  --code-border-color: #0008ff;
 
   --hero-gradient-start: rgba(233, 241, 250, 1);
-  --hero-gradient-end: rgba(237, 227, 251 ,1);
+  --hero-gradient-end: rgba(237, 227, 251, 1);
+  --hero-bg: linear-gradient(0deg, var(--hero-gradient-start) 43%, var(--hero-gradient-end) 100%);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background-main: #141920;
+    --text-color: #e0e0e0;
+
+    --hero-gradient-start: rgba(179, 229, 255, 0);
+    --hero-gradient-end: rgba(179, 229, 255, 0.1);
+
+    --hero-bg: linear-gradient(0deg, var(--hero-gradient-start), var(--hero-gradient-end));
+
+    --code-border-color: #c363ff;
+    --background-code: #1e232a;
+  }
 }

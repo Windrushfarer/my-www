@@ -6,6 +6,6 @@ module.exports = withOffline({
   trailingSlash: true,
   experimental: { esmExternals: true },
   workboxOpts: {
-    swDest: 'static/service-worker.js',
+    swDest: '../public/service-worker.js',
   }
 })

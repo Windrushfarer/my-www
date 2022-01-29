@@ -5,4 +5,7 @@ module.exports = withOffline({
   pageExtensions: ["tsx"],
   trailingSlash: true,
   experimental: { esmExternals: true },
+  workboxOpts: {
+    swDest: 'static/service-worker.js',
+  }
 })

@@ -31,6 +31,9 @@
       "@content/*": [
         "src/content/*"
       ],
+      "@effects/*": [
+        "src/effects/*"
+      ],
       "@styles/*": [
         "src/styles/*"
       ]

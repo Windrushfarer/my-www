@@ -1,6 +1,6 @@
 import { Content } from "@components/Content"
 import { Logo } from "@components/Logo"
-import { Social } from "@components/Social"
+import { ThemeSwitch } from "@components/ThemeSwitch"
 
 import styles from './Header.module.css'
 
@@ -12,7 +12,7 @@ export const Header = () => {
           <Logo />
           <div className={styles.right}>
             <div className={styles.social}>
-              <Social />
+              <ThemeSwitch />
             </div>
           </div>
         </div>

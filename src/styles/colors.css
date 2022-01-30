@@ -3,6 +3,7 @@
   --logo-secondary: #f3bc1c;
 
   --text-color: #282828;
+  --text-color-inverted: #fff;
   --text-secondary-color: #787878;
 
   --link-hover: #338af9;
@@ -17,10 +18,33 @@
   --hero-gradient-start: rgba(233, 241, 250, 1);
   --hero-gradient-end: rgba(237, 227, 251, 1);
   --hero-bg: linear-gradient(0deg, var(--hero-gradient-start) 43%, var(--hero-gradient-end) 100%);
+
+  --switcher-bg: rgba(209, 209, 209, 0.5);
+  --switcher-active-bg: #fff;
+  --switcher-active-color: #000;
 }
 
 @media (prefers-color-scheme: dark) {
-  :root {
+  :root:not(.light) {
+    --background-main: #141920;
+    --text-color: #e0e0e0;
+    --text-color-inverted: #000;
+
+    --hero-gradient-start: rgba(179, 229, 255, 0);
+    --hero-gradient-end: rgba(179, 229, 255, 0.1);
+
+    --hero-bg: linear-gradient(0deg, var(--hero-gradient-start), var(--hero-gradient-end));
+
+    --code-border-color: #c363ff;
+    --background-code: #1e232a;
+
+    --switcher-bg: rgba(78, 78, 78, 0.5);
+    --switcher-active-bg: #78787c;
+    --switcher-active-color: #fff;
+  }
+}
+
+.dark {
     --background-main: #141920;
     --text-color: #e0e0e0;
 
@@ -31,5 +55,8 @@
 
     --code-border-color: #c363ff;
     --background-code: #1e232a;
+
+    --switcher-bg: rgba(78, 78, 78, 0.5);
+    --switcher-active-bg: #78787c;
+    --switcher-active-color: #fff;
   }
-}

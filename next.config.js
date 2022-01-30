@@ -11,7 +11,8 @@ const offlineConfig = withOffline({
 
 const withSvgr = (nextConfig) => {
   const { webpack: enhanceWebpack, ...rest } = nextConfig
-
+  console.log("offlineConfig:", rest)
+  rest.exportPathMap().then(res => console.log("res:", res))
   return {
     ...rest,
     webpack(config, options) {

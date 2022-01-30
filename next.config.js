@@ -1,18 +1,17 @@
-const withOffline = require('next-offline')
+const withPWA = require('next-pwa')
 
-const offlineConfig = withOffline({
+const offlineConfig = withPWA({
   pageExtensions: ["tsx"],
   trailingSlash: true,
   experimental: { esmExternals: true },
-  workboxOpts: {
-    swDest: '../public/service-worker.js',
+  pwa: {
+    dest: 'public'
   }
 })
 
 const withSvgr = (nextConfig) => {
   const { webpack: enhanceWebpack, ...rest } = nextConfig
-  console.log("offlineConfig:", rest)
-  rest.exportPathMap().then(res => console.log("res:", res))
+
   return {
     ...rest,
     webpack(config, options) {

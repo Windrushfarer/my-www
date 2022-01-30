@@ -38,3 +38,6 @@ yarn-error.log*
 
 # misc
 public/service-worker.js
+public/workbox-*.js
+public/sw.js
+public/*.map
